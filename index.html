@@ -1,0 +1,146 @@
+﻿<!-- -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid19 Live Tracker with Khushal Jain | All Covid19 Data</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="w3-sidebar w3-light-grey w3-card-4 w3-animate-left" style="width: 180px; display: none;" id="mySidebar">
+        <div class="w3-bar w3-dark-grey">
+            <h3 class="w3-bar-item w3-padding-16">COVID19 Data Centralized Dashboard</h3>
+            <button onclick="w3_close()" class="w3-bar-item w3-button w3-right w3-padding-16" title="close Sidebar"
+                style="position: absolute; right:0; top:0; background: transparent;">×</button>
+        </div>
+        <div class="w3-bar-block" style="line-height: 25px;">
+            <style>
+                .w3-bar-item {
+                    padding: 20px 10px !important;
+                }
+            </style>
+            <a class="w3-bar-item w3-button w3-light-grey w3-border-top" href="javascript:void(0)"
+                onclick="iframeurlchange('home/index.html')"><img
+                    src="https://maxcdn.icons8.com/app/uploads/2016/03/Home-300-1.png" width="30px"></img> Home Page</a>
+
+            <a class="w3-bar-item w3-button w3-light-grey w3-border-top" href="javascript:void(0)"
+                onclick="iframeurlchange('https://www.covid19india.org/')"><img
+                    src="https://cdn.countryflags.com/thumbs/india/flag-400.png" width="30px"></img> COVID19 INDIA
+                Data state wise, live
+                charts</a>
+
+            <a class="w3-bar-item w3-button w3-light-grey w3-border-top" href="javascript:void(0)"
+                onclick="iframeurlchange('myths/covidmyths.html')"><img
+                    src="https://image.flaticon.com/icons/png/512/1378/1378593.png" width="30px"></img> COVID MYTHS</a>
+
+            <a class="w3-bar-item w3-button w3-light-grey w3-border-top" href="https://wa.me/919013151515?text=Hi"
+                target="_blank"><img src="https://i.ya-webdesign.com/images/whatsapp-icon-png-9.png"
+                    width="30px"></img>COVID19 WhatsApp CHATBOT</a>
+
+            <a class="w3-bar-item w3-button w3-light-grey w3-border-top" href="javascript:void(0)"
+                onclick="iframeurlchange('https://coronavirus.app/map')"><img
+                    src="https://img.icons8.com/officel/2x/coronavirus.png" width="30px"></img>The Coronavirus App |
+                Every country details</a>
+
+
+
+
+            <a class="w3-bar-item w3-button w3-light-grey w3-border-top" href="javascript:void(0)"
+                onclick="iframeurlchange('https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6')"><img
+                    src="https://brand.jhu.edu/assets/themes/jhu-brand/assets/images/download-preview/bloomberg-small-vertical-blue-500px-87de9c37f1.png"
+                    width="30px"></img> John
+                Hopkins University Medicine Live Data</a>
+
+            <a class="w3-bar-item w3-button w3-light-grey w3-border-top" href="javascript:void(0)"
+                onclick="iframeurlchange('worlddata/index.html')"><img
+                    src="https://image.flaticon.com/icons/png/128/52/52349.png" width="30px"></img> World Data |
+                selected country</a>
+
+            <a class="w3-bar-item w3-button w3-light-grey w3-border-top" href="javascript:void(0)"
+                onclick="iframeurlchange('covid19map/index.html')"> <img
+                    src="https://cdn1.iconfinder.com/data/icons/small-black-v5/512/world_map_earth_geography_globe_navigation_planet-512.png"
+                    width="30px"></img> COVID19 World
+                Map</a>
+
+
+
+
+
+            <!--<div class=" w3-dropdown-hover">
+                <a class="w3-button" href="javascript:void(0)">Dropdown <i class="fa fa-caret-down"></i></a>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a class="w3-bar-item w3-button" href="javascript:void(0)">Link 1</a>
+                    <a class="w3-bar-item w3-button" href="javascript:void(0)">Link 2</a>
+                    <a class="w3-bar-item w3-button" href="javascript:void(0)">Link 3</a>
+                </div>
+        </div> -->
+        </div>
+    </div>
+
+    <div id="main" style="margin-left: 0px;">
+
+        <div class="w3-container w3-display-container">
+            <span title="open Sidebar" style="display: inline-block;" id="openNav"
+                class="w3-button w3-blue-grey w3-display-topleft w3-xxlarge" onclick="w3_open()">☰</span>
+        </div>
+
+    </div>
+
+    <script>
+        function w3_open() {
+            document.getElementById("main").style.marginLeft = "180px";
+            document.getElementById("mySidebar").style.width = "300px";
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("openNav").style.display = 'none';
+        }
+        function w3_close() {
+            document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("openNav").style.display = "inline-block";
+        }
+    </script>
+
+    <iframe src="home/index.html" frameborder="0" scrollbar="no" id="covid19indiasite"></iframe>
+    <!--floating donation button-->
+    <div class="donationbutton">
+        <div class="donationconainer" id="donationcontainer">
+            <div class="w3-card-4">
+                <header class="w3-container w3-blue w3-hover-dark-gray">
+                    <h4> <a href="https://www.paypal.com/paypalme/my/profile" target="_blank"><img
+                                src="images/paypal donation.png" alt=""></a>
+                        <h4>
+                </header>
+            </div>
+            
+            <div class="w3-card-4">
+                <header class="w3-container w3-blue w3-hover-dark-gray">
+                    <h4 onclick="copynumber()"><img src="images/sbi.png" width="30%" style="margin-right: 10px;"> 61234552305</h4>
+                </header>
+            </div>
+
+        </div>
+        <img src="donate now.png" onclick="showme()" alt="Khushal Jain covid19 centralize dashboard donaiton button">
+        <style>
+            .showme{
+                display: block !important;
+            }
+            .donationconainer{
+                display: none;
+            }
+        </style>
+    </div>
+    <script>
+        function showme(){
+            document.getElementById('donationcontainer').classList.toggle("showme");
+        }
+        
+    </script>
+</body>
+
+</html>

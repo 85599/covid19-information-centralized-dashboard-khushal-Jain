@@ -1,0 +1,33 @@
+#myth_model{
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+    padding: 10px;
+}
+#myth_model h2{
+    font-weight: 400;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+#myth_model h2 span{
+    color: green;
+}
+.myth_list li{
+    display: flex;
+    justify-content: start;
+    font-size: large;
+    font-weight: 400;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+
+}
+.myth_list li:hover{
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2),0 6px 10px 0 rgba(0,0,0,0.19) !important;
+}
+.myth_list li div{
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+}

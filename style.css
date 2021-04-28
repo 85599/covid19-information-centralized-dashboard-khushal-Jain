@@ -1,0 +1,38 @@
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 0;
+    background: #117ab5;
+}
+::-webkit-scrollbar-track {
+    background-color: white;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+#covid19indiasite {
+    width: 100%;
+    height: 100vh;
+}
+.donationbutton{
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+}
+.donationbutton img{
+    max-width:300px;
+    cursor: pointer;
+}
+.w3-container{
+    transition: all 0.3s !important;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 455px) {
+.h3 {
+font-size:16px;
+}
+}
+

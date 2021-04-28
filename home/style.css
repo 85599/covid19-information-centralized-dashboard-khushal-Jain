@@ -1,0 +1,10 @@
+.hometopcharts{
+    margin: auto;
+    max-width: 1000px;
+}
+.hometopcharts div{
+    padding: 20px;
+}
+.hometopcharts H3{
+    font-family: Arial, Helvetica, sans-serif;
+}
